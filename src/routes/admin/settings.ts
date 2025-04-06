@@ -6,9 +6,13 @@ export default {
         name: {
             type: 'input',
             label: 'Name'
+        },
+        custom: {
+            label: 'Custom',
+            type: 'textarea'
         }
     },
     form: {
-        fields: ['name']
+        fields: ['name', 'custom']
     }
 }

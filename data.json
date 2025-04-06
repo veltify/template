@@ -1,0 +1,20 @@
+{
+    "settings": [
+        {
+            "id": "6VfCclsu",
+            "name": "Test",
+            "createdAt": 1743968751689,
+            "updatedAt": 0
+        }
+    ],
+    "users": [
+        {
+            "id": "ZT2gWJnN",
+            "name": "Hadi",
+            "username": "hadi",
+            "password": "123",
+            "createdAt": 1743968656309,
+            "updatedAt": 0
+        }
+    ]
+}

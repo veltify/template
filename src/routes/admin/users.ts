@@ -1,8 +1,22 @@
+import bcrypt from 'bcrypt'
+
 export const hooks = {
+    async beforeInsert({value}) {
+        value.password = bcrypt.hashSync(value.password, 10)
+    },
+    async beforeUpdate({value}) {
+        if(value.password) {
+            value.password = bcrypt.hashSync(value.password, 10)
+        }
+    },
     async afterLoad({ value }) {
-        delete value.password
+        return value.map(x => {
+            delete x['password']
+            return x
+        })
     }
 }
+
 export default {
     singular: 'User',
     plural: 'Users',
@@ -14,11 +28,13 @@ export default {
         },
         username: {
             type: 'input',
-            label: 'Username'
+            label: 'Username',
+            required: true,
         },
         password: {
             type: 'password',
-            label: 'Password'
+            label: 'Password',
+            required: true
         },
         createdAt: {
             type: 'date',

@@ -1,7 +1,7 @@
 <script lang="ts">
 	import { Form } from "veltify/cms";
 	import { Button, Card, CardBody } from "veltify";
-	import "$src/app.admin.css";
+	import "../../../app.admin.css";
 
 	let { data, form } = $props();
 

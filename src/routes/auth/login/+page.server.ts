@@ -1,4 +1,4 @@
-import { db } from '$lib/server';
+import { db } from '$lib/server/db';
 import jwt from 'jsonwebtoken';
 import { compareSync } from 'bcrypt';
 import type { Actions } from './$types';

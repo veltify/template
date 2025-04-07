@@ -1,5 +1,5 @@
 <script lang="ts">
-	import "$src/app.admin.css";
+	import "../../../app.admin.css";
 
 	import { Form } from "veltify/cms";
 	import { Button, Card, CardBody, FormField, Input } from "veltify";

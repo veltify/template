@@ -1,4 +1,4 @@
-import { db } from "$lib/server";
+import { db } from "$lib/server/db";
 import { hashSync } from 'bcrypt'
 import jwt from 'jsonwebtoken'
 import { redirect } from "@sveltejs/kit";
